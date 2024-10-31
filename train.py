@@ -41,8 +41,8 @@ if __name__ == '__main__':
     parser.add_argument('--min_child_weight', type=int, default=7, help='Minimum sum of instance weight (hessian) needed in a child.')
     parser.add_argument('--learning_rate', type=float, default=0.1, help='Learning rate (step size).')
     parser.add_argument('--n_estimators', type=int, default=1000, help='Number of boosting rounds.')
-    parser.add_argument('--subsample', type=float, default=0.8, help='Subsample ratio of the training data.')
-    parser.add_argument('--colsample_bytree', type=float, default=0.8, help='Subsample ratio of columns when constructing each tree.')
+    parser.add_argument('--subsample', type=float, default=1.0, help='Subsample ratio of the training data.')
+    parser.add_argument('--colsample_bytree', type=float, default=1.0, help='Subsample ratio of columns when constructing each tree.')
     parser.add_argument('--reg_alpha', type=float, default=0.5, help='L1 regularization term on weights.')
     parser.add_argument('--reg_lambda', type=float, default=10, help='L2 regularization term on weights.')
 
