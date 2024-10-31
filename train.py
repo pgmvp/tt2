@@ -7,6 +7,8 @@ import joblib
 import argparse
 
 def train_model(data_path, model_path, params):
+
+    print("Loading training data")
     # Load the dataset
     df = pd.read_csv(data_path)
     
@@ -16,6 +18,8 @@ def train_model(data_path, model_path, params):
     
     # Initialize and train XGBoost model with specified parameters
     model = XGBRegressor(**params, objective='reg:squarederror', random_state=42)
+
+    print("Training the model")
     model.fit(X_train, y_train)
     
     # Evaluate model on train set
