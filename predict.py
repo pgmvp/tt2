@@ -12,7 +12,7 @@ def make_predictions(model, data_path, output_path):
     test_data = pd.read_csv(data_path)
     
     # Make predictions
-    predictions = model.predict(test_data_scaled)
+    predictions = model.predict(test_data)
     
     # Save predictions to file
     np.savetxt(output_path, predictions, delimiter=",")
