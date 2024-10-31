@@ -7,6 +7,7 @@ The following repository contains solution for second task. The solution uses xg
 - file with prediction results;
 - `requirements.txt` file.
 
+Originally, `eda.ipynb` was too big to upload to GitHub, so I removed all outputs. Please, run it to see visualizations, in the same directory as `train.csv`.
 To install all the required packages run following command:
 
 `pip install -r requirements.txt`
